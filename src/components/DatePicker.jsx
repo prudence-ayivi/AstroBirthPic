@@ -29,7 +29,7 @@ const DatePicker = ({ onDateChange }) => {
   return (
     <div className="flex items-center space-x-2 p-4">
       <button
-        className="bg-black-700 text-white px-3 py-2 rounded-lg hover:bg-gray-600"
+        className="bg-gray-600 hover:bg-gray-500 text-white px-3 py-2 rounded-lg"
         onClick={() => changeYear(-1)}
         disabled={new Date(selectedDate) <= MIN_DATE}
       >
@@ -46,7 +46,7 @@ const DatePicker = ({ onDateChange }) => {
       />
 
       <button
-        className="bg-gray-700 text-white px-3 py-2 rounded-lg hover:bg-gray-600"
+        className="bg-gray-600 text-white px-3 py-2 rounded-lg hover:bg-gray-500"
         onClick={() => changeYear(1)}
         disabled={new Date(selectedDate) >= MAX_DATE}
       >
