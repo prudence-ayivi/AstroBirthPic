@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_KEY = "rLOQgAUPlAxlew1WpdiRZcfEme6QBLyX2xtZGv9C"; 
+const API_KEY = import.meta.env.VITE_NASA_API_KEY; 
 
 export const fetchAPOD = async (date) => {
   try {
